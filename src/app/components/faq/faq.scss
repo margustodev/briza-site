@@ -1,0 +1,133 @@
+.faq {
+  background: #FAF6F7;
+  padding: 120px 90px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.subtitle {
+  color: #945A73;
+  font-size: 13px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #3E2B35;
+  margin-bottom: 50px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+details {
+  background: #ffffff;
+  border: 1px solid #E6D6DB;
+  border-radius: 18px;
+  padding: 24px 28px;
+}
+
+details[open] {
+  box-shadow:
+    0 20px 45px rgba(148, 90, 115, .08);
+}
+
+summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #3E2B35;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details p {
+  color: #6B5A62;
+  line-height: 1.9;
+  margin-top: 18px;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 1024px) {
+
+  .faq {
+    padding: 100px 50px;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+}
+
+/* ========================= */
+/* CELULAR */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .faq {
+    padding: 80px 25px;
+  }
+
+  .subtitle {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  details {
+    padding: 20px;
+  }
+
+  summary {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  details p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+}
+
+/* ========================= */
+/* CELULARES PEQUENOS */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+  .faq {
+    padding: 70px 20px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  summary {
+    font-size: 16px;
+  }
+
+}

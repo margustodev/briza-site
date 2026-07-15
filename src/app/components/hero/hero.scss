@@ -1,0 +1,197 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 140px 90px 80px;
+
+  background:
+    linear-gradient(
+      rgba(247, 241, 243, .92),
+      rgba(247, 241, 243, .90)
+    ),
+    url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f');
+
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  max-width: 720px;
+}
+
+.subtitle {
+  color: #945A73;
+  font-size: 13px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 68px;
+  line-height: 1.05;
+  color: #3E2B35;
+  margin-bottom: 26px;
+}
+
+.description {
+  color: #6B5A62;
+  font-size: 18px;
+  line-height: 1.9;
+  margin-bottom: 38px;
+}
+
+.buttons {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #945A73;
+  color: white;
+
+  padding: 18px 32px;
+  border-radius: 14px;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  box-shadow:
+    0 14px 35px rgba(148, 90, 115, .20);
+
+  transition: all .3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  background: #7B4A5F;
+}
+
+.btn-secondary {
+  background: white;
+  color: #945A73;
+
+  border: 1px solid #D8C3CB;
+
+  padding: 18px 32px;
+  border-radius: 14px;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: all .3s ease;
+}
+
+.btn-secondary:hover {
+  background: #945A73;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 1024px) {
+
+  .hero {
+    padding: 150px 50px 80px;
+  }
+
+  h1 {
+    font-size: 52px;
+  }
+
+  .description {
+    font-size: 17px;
+  }
+
+}
+
+/* ========================= */
+/* CELULAR */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: auto;
+    padding: 245px 25px 90px;
+    text-align: center;
+    align-items: flex-start;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .subtitle {
+    letter-spacing: 3px;
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 42px;
+    line-height: 1.15;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+/* ========================= */
+/* CELULARES PEQUENOS */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+  .hero {
+    padding: 255px 20px 100px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+}
+
+/* ========================= */
+/* IPHONE SE / TELAS MUITO ESTREITAS */
+/* ========================= */
+
+@media (max-width: 380px) {
+
+  .hero {
+    padding-top: 265px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+}

@@ -1,0 +1,130 @@
+.cta-final {
+  background: #F4EDF0;
+  padding: 120px 90px;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  color: #945A73;
+  font-size: 13px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #3E2B35;
+  font-size: 58px;
+  line-height: 1.12;
+  margin-bottom: 26px;
+}
+
+.description {
+  color: #6B5A62;
+  font-size: 20px;
+  line-height: 1.8;
+  max-width: 760px;
+  margin: 0 auto 48px;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  background: #945A73;
+  color: #ffffff;
+
+  padding: 18px 34px;
+  border-radius: 14px;
+
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+
+  box-shadow:
+    0 14px 35px rgba(148, 90, 115, .20);
+
+  transition: all .3s ease;
+}
+
+.btn-whatsapp:hover {
+  background: #7B4A5F;
+  transform: translateY(-3px);
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 1024px) {
+
+  .cta-final {
+    padding: 100px 50px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+}
+
+/* ========================= */
+/* CELULAR */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .cta-final {
+    padding: 85px 25px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    letter-spacing: 4px;
+  }
+
+  h2 {
+    font-size: 38px;
+    line-height: 1.15;
+  }
+
+  .description {
+    font-size: 16px;
+    margin-bottom: 38px;
+  }
+
+  .btn-whatsapp {
+    width: 100%;
+    font-size: 16px;
+  }
+
+}
+
+/* ========================= */
+/* CELULARES PEQUENOS */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+  .cta-final {
+    padding: 75px 20px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+}

@@ -1,0 +1,166 @@
+.footer {
+  background: #F7F1F3;
+  color: #3E2B35;
+  padding: 80px 90px 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 1fr;
+  gap: 60px;
+}
+
+.logo img {
+  height: 120px;
+  width: auto;
+  display: block;
+  margin-bottom: 28px;
+}
+
+.brand p {
+  color: #6B5A62;
+  line-height: 1.8;
+  max-width: 440px;
+  font-size: 17px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-bottom: 24px;
+  color: #3E2B35;
+}
+
+.links,
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.links a,
+.contact a,
+.contact-info,
+.address {
+  color: #6B5A62;
+  text-decoration: none;
+  line-height: 1.7;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  transition: color .3s ease;
+}
+
+.links a:hover,
+.contact a:hover,
+.address-link:hover {
+  color: #945A73;
+}
+
+.contact i,
+.address i {
+  color: #945A73;
+  margin-top: 4px;
+}
+
+.address-link {
+  color: #6B5A62;
+  text-decoration: none;
+}
+
+.bottom {
+  margin-top: 70px;
+  padding: 24px 0;
+  text-align: center;
+
+  color: #6B5A62;
+  border-top: 1px solid #E6D6DB;
+  font-size: 14px;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 1024px) {
+
+  .footer {
+    padding: 70px 50px 0;
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+  }
+
+  .brand {
+    grid-column: 1 / -1;
+  }
+
+}
+
+/* ========================= */
+/* CELULAR */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .footer {
+    padding: 60px 25px 0;
+    text-align: center;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .logo img {
+    height: 95px;
+    margin: 0 auto 24px;
+  }
+
+  .brand p {
+    max-width: 100%;
+  }
+
+  .links,
+  .contact {
+    align-items: center;
+  }
+
+  .links a,
+  .contact a,
+  .contact-info,
+  .address {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .bottom {
+    margin-top: 50px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+}
+
+/* ========================= */
+/* CELULARES PEQUENOS */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+  .footer {
+    padding: 55px 20px 0;
+  }
+
+  .logo img {
+    height: 86px;
+  }
+
+}
