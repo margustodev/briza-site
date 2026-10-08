@@ -1,8 +1,25 @@
+
 RewriteEngine On
 RewriteBase /
 
+# Forca HTTPS e dominio sem www
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.brizalimaadvogada\.com\.br$ [NC]
+RewriteRule ^ https://brizalimaadvogada.com.br%{REQUEST_URI} [R=301,L]
+
+# Redireciona a rota antiga do artigo
+RewriteRule ^artigo/?$ /artigos/stf-derruba-idade-minima-aposentadoria-especial [R=301,L]
+
+# Remove a barra final das URLs dos artigos
+RewriteRule ^artigos/([^/]+)/$ /artigos/$1 [R=301,L]
+
+# Entrega o HTML pre-renderizado de cada artigo
+RewriteRule ^artigos/([^/]+)$ artigos/$1/index.html [L]
+
+# Mantem arquivos e diretorios existentes
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
+# Fallback do Angular
 RewriteRule ^ index.html [L]
